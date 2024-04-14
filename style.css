@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ html {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Red Hat Display", Arial, sans-serif;
+     font-weight: 500;
+     font-size: clamp(16px, 1vw, 32px);
+     background-image: url(images/pattern-background-desktop.svg);
+     background-color: rgb(224, 232, 255);
+     background-repeat: repeat-x;
+ }
+
+body {
+    background-color: white;
+    box-shadow: rgb(114, 128, 167) 0 5px 10px -5px;
+    text-align: center;
+    width: clamp(30%, 400px, 90%);
+    height: clamp(40%, 50rem, 90%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.illustration-hero {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.content-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+}
+
+h1 {
+    color: rgb(31, 47, 86);
+    font-weight: 900;
+}
+
+p {
+    color: rgb(114, 128, 167);
+}
+
+.plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(245, 247, 255);
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.plan-title {
+    display: block;
+    padding-bottom: 0.5rem;
+    font-weight: 900;
+    color: rgb(31, 47, 86);
+}
+
+.plan-pricing {
+    color: rgb(114, 128, 167);
+}
+
+.plan-change {
+    color: rgb(56, 41, 224);
+}
+
+.plan-change:hover {
+    text-decoration: none;
+    filter: hue-rotate(15deg) brightness(85%);
+}
+
+.payment-button {
+    display: block;
+    background-color: rgb(56, 41, 224);
+    color: white;
+    font-weight: 700;
+    box-shadow: rgb(56, 41, 224) 0 5px 30px -10px;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+}
+
+.payment-button:hover {
+    filter: hue-rotate(15deg);
+}
+
+a.plan-cancel {
+    color: rgb(114, 128, 167);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+a.plan-cancel:hover {
+    color: rgb(31, 47, 86);
+}
+
